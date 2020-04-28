@@ -19,27 +19,33 @@
         <!--Sub Header Start-->
 
         <div class="row">
+
+
+
             <div class="col-md-9">
 
+                @foreach($posts as $post)
                 <!--News Box Start-->
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-6 col-sm-6">
                     <div class="news-box">
+                        @if ($post->image_url)
                         <div class="new-thumb">
-                            <span class="cat c1">Economy</span> <img src="images/h3citynews-1.jpg" alt="">
+                            <span class="cat c1">Economy</span> <img src="{{ $post->image_url}}" alt="">
                         </div>
+                        @endif
                         <div class="new-txt">
                             <ul class="news-meta">
-                                <li>30 MAR, 2019</li>
+                                <li>{{ $post->date }}</li>
                                 <li>176 Comments</li>
                             </ul>
-                            <h6><a href="#">Media talking about foriegn affairs</a></h6>
-                            <p> How all this mistaken idea of denounce pleasure and praising pain was born I will give you an. </p>
+                            <h6><a href="#">{{ $post->title }}</a></h6>
+                            <p>{{ $post->excerpt }} </p>
                         </div>
-                        <div class="news-box-f"> <img src="images/user2.jpg" alt=""> Johny Stewart <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
+                        <div class="news-box-f"> <img src="images/user2.jpg" alt=""> {{ $post->author->name }}<a href="#"><i class="fas fa-arrow-right"></i></a> </div>
                     </div>
                 </div>
                 <!--News Box End-->
-
+                    @endforeach
 
             </div>
             <!--Sidebar Start-->

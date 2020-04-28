@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/blog', function () {
-    return view('blog.index');
-});
+Route::get('/blog', [
+    'uses' => 'BlogController@index',
+]);
 
 
 Auth::routes();
