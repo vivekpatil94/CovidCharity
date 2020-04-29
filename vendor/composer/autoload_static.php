@@ -124,6 +124,7 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'GrahamCampbell\\Markdown\\' => 24,
         ),
         'F' => 
         array (
@@ -373,6 +374,10 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'GrahamCampbell\\Markdown\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/markdown/src',
+        ),
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
@@ -465,6 +470,7 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
     );
 
     public static $classMap = array (
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -487,6 +493,7 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
+        'App\\Providers\\ComposerServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ComposerServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
@@ -548,6 +555,7 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'CatgegoriesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CatgegoriesTableSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1264,6 +1272,12 @@ class ComposerStaticInit0ae6d47ee71944bc3a9aa3bc031a0f5a
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
         'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
         'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/HandleCors.php',
+        'GrahamCampbell\\Markdown\\Facades\\Markdown' => __DIR__ . '/..' . '/graham-campbell/markdown/src/Facades/Markdown.php',
+        'GrahamCampbell\\Markdown\\MarkdownServiceProvider' => __DIR__ . '/..' . '/graham-campbell/markdown/src/MarkdownServiceProvider.php',
+        'GrahamCampbell\\Markdown\\View\\Compiler\\MarkdownCompiler' => __DIR__ . '/..' . '/graham-campbell/markdown/src/View/Compiler/MarkdownCompiler.php',
+        'GrahamCampbell\\Markdown\\View\\Directive\\MarkdownDirective' => __DIR__ . '/..' . '/graham-campbell/markdown/src/View/Directive/MarkdownDirective.php',
+        'GrahamCampbell\\Markdown\\View\\Engine\\BladeMarkdownEngine' => __DIR__ . '/..' . '/graham-campbell/markdown/src/View/Engine/BladeMarkdownEngine.php',
+        'GrahamCampbell\\Markdown\\View\\Engine\\PhpMarkdownEngine' => __DIR__ . '/..' . '/graham-campbell/markdown/src/View/Engine/PhpMarkdownEngine.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',

@@ -24,34 +24,35 @@
                     <ul class="right-links">
                         <li> <a href="#">Toll Free: <strong>0800 12345</strong></a> </li>
                         <li> <a href="#"><i class="fas fa-street-view"></i> Explore</a> </li>
-                        @guest
+                        <?php if(auth()->guard()->guest()): ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a>
                             </li>
-                            @if (Route::has('register'))
+                            <?php if(Route::has('register')): ?>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
                                 </li>
-                            @endif
-                        @else
+                            <?php endif; ?>
+                        <?php else: ?>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        <?php echo e(__('Logout')); ?>
+
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
+                                    <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                                        <?php echo csrf_field(); ?>
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        <?php endif; ?>
                     </ul>
 
 
@@ -101,7 +102,7 @@
                                         <li><a href="event-single.html">Event Single</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ route('blog') }}">Blog</a></li>
+                                <li><a href="<?php echo e(route('blog')); ?>">Blog</a></li>
                                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li> <a href="#">Services</a>
@@ -166,3 +167,4 @@
     </div>
 </header>
 <!--Header End-->
+<?php /**PATH /shared/httpd/laravel/laravel/resources/views/include/navbar.blade.php ENDPATH**/ ?>

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Category' => $baseDir . '/app/Category.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -28,6 +29,7 @@ return array(
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
+    'App\\Providers\\ComposerServiceProvider' => $baseDir . '/app/Providers/ComposerServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\User' => $baseDir . '/app/User.php',
@@ -89,6 +91,7 @@ return array(
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
+    'CatgegoriesTableSeeder' => $baseDir . '/database/seeds/CatgegoriesTableSeeder.php',
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -805,6 +808,12 @@ return array(
     'Fideloper\\Proxy\\TrustedProxyServiceProvider' => $vendorDir . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
     'Fruitcake\\Cors\\CorsServiceProvider' => $vendorDir . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
     'Fruitcake\\Cors\\HandleCors' => $vendorDir . '/fruitcake/laravel-cors/src/HandleCors.php',
+    'GrahamCampbell\\Markdown\\Facades\\Markdown' => $vendorDir . '/graham-campbell/markdown/src/Facades/Markdown.php',
+    'GrahamCampbell\\Markdown\\MarkdownServiceProvider' => $vendorDir . '/graham-campbell/markdown/src/MarkdownServiceProvider.php',
+    'GrahamCampbell\\Markdown\\View\\Compiler\\MarkdownCompiler' => $vendorDir . '/graham-campbell/markdown/src/View/Compiler/MarkdownCompiler.php',
+    'GrahamCampbell\\Markdown\\View\\Directive\\MarkdownDirective' => $vendorDir . '/graham-campbell/markdown/src/View/Directive/MarkdownDirective.php',
+    'GrahamCampbell\\Markdown\\View\\Engine\\BladeMarkdownEngine' => $vendorDir . '/graham-campbell/markdown/src/View/Engine/BladeMarkdownEngine.php',
+    'GrahamCampbell\\Markdown\\View\\Engine\\PhpMarkdownEngine' => $vendorDir . '/graham-campbell/markdown/src/View/Engine/PhpMarkdownEngine.php',
     'GuzzleHttp\\Client' => $vendorDir . '/guzzlehttp/guzzle/src/Client.php',
     'GuzzleHttp\\ClientInterface' => $vendorDir . '/guzzlehttp/guzzle/src/ClientInterface.php',
     'GuzzleHttp\\Cookie\\CookieJar' => $vendorDir . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',
