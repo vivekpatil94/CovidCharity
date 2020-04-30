@@ -24,6 +24,7 @@
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
+
 </head>
 <body>
     <div id="app">
@@ -34,7 +35,7 @@
                  @yield('content')
         </div>
     </div>
-    @include('include.footer')
+    {{--@include('include.footer')--}}
 </body>
 
 <!-- Scripts

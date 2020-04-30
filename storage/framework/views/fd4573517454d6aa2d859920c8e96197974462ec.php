@@ -24,6 +24,7 @@
     <link href="<?php echo e(asset('css/owl.carousel.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/bootstrap.min.css')); ?>" rel="stylesheet">
 
+
 </head>
 <body>
     <div id="app">
@@ -34,7 +35,7 @@
                  <?php echo $__env->yieldContent('content'); ?>
         </div>
     </div>
-    <?php echo $__env->make('include.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    
 </body>
 
 <!-- Scripts

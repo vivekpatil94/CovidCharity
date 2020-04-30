@@ -38,4 +38,16 @@ Route::get('/author/{author}', [
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'Backend\HomeController@index')->name('dashboard');
+Route::get('logout', 'Auth\LoginController@logout');
+
+
+Route::resource('/admin/blog', 'Backend\BlogController', [
+    'names' => [
+        'index' => 'backend.blog.index',
+        'create' => 'backend.blog.create',
+         'edit' => 'backend.blog.edit',
+        'destroy' => 'backend.blog.destroy'
+    ]
+]);
+

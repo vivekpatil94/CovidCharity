@@ -5,9 +5,9 @@
         <div class="container">
             <h2>Explore Blog & Highlights</h2>
             <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="#">Explore City</a> </li>
-                <li> Cityscapes & Highlights </li>
+                <li> <a href="/">Home</a> </li>
+                <li> <a href="#">Explore Blog</a> </li>
+
             </ul>
         </div>
     </section>
